@@ -24,6 +24,8 @@ textarea{
 }
 
 .description{
+  display: flex;
+  align-items: center;
   white-space: pre-wrap;
   border: 1px solid black;
 }
@@ -35,7 +37,7 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  /* height: 80px; */
   border-top: 1px solid white;;
 }
 
@@ -61,15 +63,20 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  display: flex;
   background-color: #06AED5;
   color: white;
-  border-top: 1px solid white;
+  border: 1px solid black;
+  justify-content: center;
+  align-items:center;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+i {
+
+}
+
