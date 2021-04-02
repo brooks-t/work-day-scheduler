@@ -21,7 +21,7 @@ var saveButtonFive = $('#five-pm-save-btn');
 var fivePM = $('#five-pm-text');
 
 
-
+// retrieves stored data and populates scheduler. determins whether a time block is past, present or future
 function storedData () {
     storedItemNine = localStorage.getItem('9am');
     console.log(storedItemNine);
@@ -126,8 +126,10 @@ function storedData () {
     }
 }
 
+//declares current day in the jumbo header
 currentDay.text(now.format('dddd, MMMM Do'));
 
+//click listeners that save a data entry to a specific timeblock and store it in the local memory
 saveButtonNine.on('click', function () {
     var description = $('textarea[name="9am"]').val();
     console.log(description);
@@ -182,17 +184,9 @@ saveButtonFive.on('click', function () {
     localStorage.setItem("5pm", description);
 })
 
-
+// retrieve the local data
 storedData ();
 
-
-
-
-/*var storedNine = localStorage.getItem("9am");
-var myText = $('#nine-am-text');
-
-var nineAm = $('textarea[name="9am"]').val();
-nineAm.text(storedNine);*/
 
 
 
