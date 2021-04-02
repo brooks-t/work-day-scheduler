@@ -26,38 +26,104 @@ function storedData () {
     storedItemNine = localStorage.getItem('9am');
     console.log(storedItemNine);
     nineAM.text(storedItemNine);
+    if (9 < hour) {
+        $('#nine-am-description').addClass("past");
+    } else if (9 == hour)  {
+        $('#nine-am-description').addClass("present");
+    } else {
+        $('#nine-am-description').addClass("future");
+    }
 
     storedItemTen = localStorage.getItem('10am');
     console.log(storedItemTen);
     tenAM.text(storedItemTen);
+    if (10 < hour) {
+        $('#ten-am-description').addClass("past");
+    } else if (10 == hour)  {
+        $('#ten-am-description').addClass("present");
+    } else {
+        $('#ten-am-description').addClass("future");
+    }
 
     storedItemEleven = localStorage.getItem('11am');
     console.log(storedItemEleven);
     elevenAM.text(storedItemEleven);
+    if (11 < hour) {
+        $('#eleven-am-description').addClass("past");
+    } else if (11 == hour)  {
+        $('#eleven-am-description').addClass("present");
+    } else {
+        $('#eleven-am-description').addClass("future");
+    }
 
     storedItemTwelve = localStorage.getItem('12pm');
     console.log(storedItemTwelve);
     twelvePM.text(storedItemTwelve);
+    if (12 < hour) {
+        $('#twelve-pm-description').addClass("past");
+    } else if (12 == hour)  {
+        $('#twelve-pm-description').addClass("present");
+    } else {
+        $('#twelve-pm-description').addClass("future");
+    }
 
     storedItemOne = localStorage.getItem('1pm');
     console.log(storedItemOne);
     onePM.text(storedItemOne);
+    if (13 < hour) {
+        $('#one-pm-description').addClass("past");
+    } else if (13 == hour)  {
+        $('#one-pm-description').addClass("present");
+    } else {
+        $('#one-pm-description').addClass("future");
+    }
 
     storedItemTwo = localStorage.getItem('2pm');
     console.log(storedItemTwo);
     twoPM.text(storedItemTwo);
+    storedItemOne = localStorage.getItem('1pm');
+    console.log(storedItemOne);
+    onePM.text(storedItemOne);
+    if (14 < hour) {
+        $('#two-pm-description').addClass("past");
+    } else if (14 == hour)  {
+        $('#two-pm-description').addClass("present");
+    } else {
+        $('#two-pm-description').addClass("future");
+    }
 
     storedItemThree = localStorage.getItem('3pm');
     console.log(storedItemThree);
     threePM.text(storedItemThree);
+    if (15 < hour) {
+        $('#three-pm-description').addClass("past");
+    } else if (15 == hour)  {
+        $('#three-pm-description').addClass("present");
+    } else {
+        $('#three-pm-description').addClass("future");
+    }
 
     storedItemFour = localStorage.getItem('4pm');
     console.log(storedItemFour);
     fourPM.text(storedItemFour);
+    if (16 < hour) {
+        $('#four-pm-description').addClass("past");
+    } else if (16 == hour)  {
+        $('#four-pm-description').addClass("present");
+    } else {
+        $('#four-pm-description').addClass("future");
+    }
 
     storedItemFive = localStorage.getItem('5pm');
     console.log(storedItemFive);
     fivePM.text(storedItemFive);
+    if (17 < hour) {
+        $('#five-pm-description').addClass("past");
+    } else if (17 == hour)  {
+        $('#five-pm-description').addClass("present");
+    } else {
+        $('#five-pm-description').addClass("future");
+    }
 }
 
 currentDay.text(now.format('dddd, MMMM Do'));
